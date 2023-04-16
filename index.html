@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>One on One Video Talk Using Qiniu RTC SDK</title>
+    <script src="qnweb.js"></script>
+    <script src="VideoCall.js"></script>
+    <style>
+        #localtracks,
+        #remotetracks {
+            width: 320px;
+            height: 240px;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button onclick="checkSystem()">checkSystem</button>
+    </div>
+    <label>请输入 RoomToken </label>
+    <input id="roomtoken" type="text" />
+    <button onclick="joinRoom()">加入房间</button>
+    <p>本地视频</p>
+    <div id="localtracks"></div>
+    <p>远端视频</p>
+    <div id="remotetracks"></div>
+</body>
+
+</html>
